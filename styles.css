@@ -148,6 +148,7 @@ header h2 {
     color: #00cc66;
     margin-right: 10px;
     font-size: 1.2em;
+    
 }
 
 .card-features li.cross::before {
@@ -155,6 +156,7 @@ header h2 {
     color: #ff3b3b;
     margin-right: 10px;
     font-size: 1.2em;
+    
 }
 
 /* Navigation buttons */
@@ -164,13 +166,13 @@ header h2 {
     transform: translateY(-50%);
     background: linear-gradient(135deg, #e0e7ff 60%, #fff 100%);
     border: none;
-    font-size: 2.2em;
-    padding: 12px 18px;
+    font-size: 2em;
+    padding: 10px;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(80,120,255,0.10);
     color: #2575fc;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    transition: background 0.2s;
 }
 
 .prev:hover, .next:hover {
@@ -181,12 +183,12 @@ header h2 {
 
 .prev {
     left: 10px;
-    right: auto;
+    
 }
 
 .next {
     right: 10px;
-    left: auto;
+    
 }
 
 /* Modern Footer */
@@ -226,18 +228,17 @@ header h2 {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 250px) {
     .navbar, .footer, .slider-container {
-        max-width: 98vw;
+        gap: 10px;
     }
     .card {
-        min-width: 220px;
-        max-width: 98vw;
-        padding: 24px 8px 20px 8px;
+        min-width: calc(100% - 10px); /* Show 1 card on small screens */
+        padding: 30px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 250px) {
     .navbar {
         flex-direction: column;
         gap: 8px;
